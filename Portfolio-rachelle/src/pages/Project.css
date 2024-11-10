@@ -25,14 +25,19 @@
   
 .project-image {
   width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .title-container {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 0.3rem; 
 }
   
 .back-button {
@@ -50,4 +55,10 @@
 .back-button:hover {
   color: #c4958d; 
 }
-  
+
+@media (min-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+  }
+}

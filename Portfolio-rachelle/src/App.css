@@ -48,8 +48,7 @@ footer {
 }
 
 .section {
-  padding: 1rem 2rem;
-  margin: 1rem 0 0;
+  padding: 2rem;
   border-bottom: 1.5px solid transparent;
   border-image: linear-gradient(to right, #c4958d 0%, #996c4f 22%, #4f3338 100%);
   border-image-slice: 1;
@@ -74,7 +73,6 @@ footer {
 .section img {
   width: 100%;
   max-width: 80vw;
-  border-radius: 8px;
   margin: 0 auto; 
   display: block;
 }
@@ -84,6 +82,18 @@ footer {
   transition: transform 0.3s ease;
 }
 
+.thumbnail-image {
+  width: 100%;
+  max-width: 300px; 
+  height: 300px;    
+  object-fit: cover; 
+  border-radius: 0;  
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.05);
+}
 
 .media-text {
   text-align: left;

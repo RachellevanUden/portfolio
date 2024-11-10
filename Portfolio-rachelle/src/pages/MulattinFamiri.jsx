@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import mulattinFamiriImages from '../assets/Photography/mulattinFamiriImages';
 import './Project.css';
 
 function MulattinFamiri() {
@@ -13,12 +14,20 @@ function MulattinFamiri() {
         </Link>
         <h2 className="project-title">Mulattin Famiri</h2>
       </div>
-      
-      <p>
-        Description of the Mulattin Famiri project.</p>
-      <img src="https://via.placeholder.com/600" alt="Mulattin Famiri Project" className="project-image" />
+
+      <div className="image-gallery">
+        {mulattinFamiriImages.map((image, index) => (
+          <img 
+            key={index} 
+            src={image} 
+            alt={`Mulattin Famiri ${index + 1}`} 
+            className="project-image" 
+          />
+        ))}
+      </div>
     </div>
   );
 }
+
 
 export default MulattinFamiri;

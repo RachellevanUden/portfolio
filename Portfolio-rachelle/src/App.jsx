@@ -9,6 +9,7 @@ import './App.css';
 import PhotographyOverview from './pages/PhotographyOverview';
 import MulattinFamiri from './pages/MulattinFamiri';
 import Tegenwind from './pages/Tegenwind';
+import thumbnailImagePhoto from './assets/Photography/Rachelle_van_Uden_Tegenwind-05.jpg';
 
 function Home() {
   const location = useLocation();
@@ -30,7 +31,7 @@ function Home() {
       
       <section id="photography" className="section">
         <Link to="/photography-overview">
-          <img src="https://via.placeholder.com/300" alt="Photography Overview" className="home-image" />
+          <img src={thumbnailImagePhoto} alt="Photography Overview" className="thumbnail-image" />
         </Link>
         <div className="media-text">
           <h2>Photography</h2>

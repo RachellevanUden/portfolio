@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
+import tegenwindImages from '../assets/Photography/tegenwindImages';
 import './Project.css';
 
 function Tegenwind() {
@@ -14,10 +15,16 @@ function Tegenwind() {
         <h2 className="project-title">Tegenwind</h2>
       </div>
       
-      <p>
-        Description of the Tegenwind project goes here. Include any unique details or insights that make this project special.
-      </p>
-      <img src="https://via.placeholder.com/600" alt="Tegenwind Project" className="project-image" />
+      <div className="image-gallery">
+        {tegenwindImages.map((image, index) => (
+          <img 
+            key={index} 
+            src={image} 
+            alt={`Tegenwind ${index + 1}`} 
+            className="project-image" 
+          />
+        ))}
+      </div>
     </div>
   );
 }
