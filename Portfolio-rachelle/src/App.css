@@ -78,8 +78,7 @@ footer {
 }
 
 .section img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  opacity: 0.5;
 }
 
 .thumbnail-image {
@@ -92,7 +91,7 @@ footer {
 }
 
 .thumbnail-image:hover {
-  transform: scale(1.05);
+  opacity: 1;
 }
 
 .media-text {
@@ -114,6 +113,44 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 /* Desktop styling */
