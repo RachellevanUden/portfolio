@@ -1,0 +1,50 @@
+.photography-overview {
+  padding: 2rem;
+  text-align: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+  
+.project-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+.project-item {
+  width: 300px;
+  text-align: center;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+}
+  
+.project-text {
+  text-align: left;
+}
+
+.project-item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+  
+.overview-title {
+  text-align: left;
+  color: #333;
+  margin: 1rem 0; 
+  padding-left: 1rem;
+}

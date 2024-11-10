@@ -7,12 +7,14 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h1>Rachelle van Uden</h1>
+      <Link to="/" className="navbar-logo" onClick={() => setIsMenuOpen(false)}>
+        Rachelle van Uden
+      </Link>
       <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="hamburger">
         ☰
       </button>
       <div className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
-        <Link to="/" state={{ scrollTo: "photography" }} className="nav-item">Photography</Link>
+        <Link to="/photography-overview" className="nav-item">Photography</Link>
         <Link to="/" state={{ scrollTo: "video" }} className="nav-item">Video</Link>
         <Link to="/" state={{ scrollTo: "design" }} className="nav-item">Design</Link>
         <Link to="/about" className="nav-item">About</Link>
