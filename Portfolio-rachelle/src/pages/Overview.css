@@ -1,0 +1,55 @@
+/* src/pages/Overview.css */
+
+.overview-page {
+    padding: 2rem;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #4f3338;
+    text-decoration: none;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    color: #c4958d;
+  }
+  
+  .overview-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .overview-message {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 2rem;
+  }
+  
+  /* Vimeo Button Styling */
+.vimeo-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1ab7ea;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vimeo-button:hover {
+    background-color: #0e8ab8;
+  }

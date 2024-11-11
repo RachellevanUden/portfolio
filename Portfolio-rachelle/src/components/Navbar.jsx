@@ -15,8 +15,8 @@ function Navbar() {
       </button>
       <div className={`nav-menu ${isMenuOpen ? 'show' : ''}`}>
         <Link to="/photography-overview" className="nav-item">Photography</Link>
-        <Link to="/" state={{ scrollTo: "video" }} className="nav-item">Video</Link>
-        <Link to="/" state={{ scrollTo: "design" }} className="nav-item">Design</Link>
+        <Link to="/video-overview" className="nav-item">Video</Link>
+        <Link to="/design-overview" className="nav-item">Design</Link>
         <Link to="/about" className="nav-item">About</Link>
         <Link to="/contact" className="nav-item">Contact</Link>
       </div>
