@@ -20,7 +20,7 @@ function VideoOverview() {
 
       {/* Vimeo Link Button */}
       <a 
-        href="https://vimeo.com/user64088353" // Replace with your actual Vimeo profile URL
+        href="https://vimeo.com/user64088353"
         target="_blank" 
         rel="noopener noreferrer" 
         className="vimeo-button"

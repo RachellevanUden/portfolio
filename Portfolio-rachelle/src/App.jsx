@@ -13,7 +13,7 @@ import VideoOverview from './pages/VideoOverview';
 import DesignOverview from './pages/DesignOverview';
 import thumbnailImagePhoto from './assets/Photography/Rachelle_van_Uden_Tegenwind-05.jpg';
 import thumbnailImageVideo from './assets/Video/Rachelle_van_Uden_EOTS.jpg';
-import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia.png';
+import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia1.png';
 
 function Home() {
   const location = useLocation();

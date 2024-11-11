@@ -3,22 +3,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import './Overview.css';
+import designImages from '../assets/Design/designImages';
 
 function DesignOverview() {
   return (
-    <div className="overview-page">
+    <div className="project-detail">
       <div className="title-container">
-    <Link to="/" className="back-button">
+        <Link to="/" className="back-button">
           <FaArrowLeft />
         </Link>
-        <h2 className="overview-title">Design</h2>
+        <h2 className="project-title">Design Projects</h2>
       </div>
-      
-      <p className="overview-message">
-        Exciting design projects are being uploaded soon! Check back soon as the website is still under construction.
-      </p>
+
+      <div className="image-gallery">
+        {designImages.map((image, index) => (
+          <img 
+            key={index} 
+            src={image} 
+            alt={`Design Project ${index + 1}`} 
+            className="project-image" 
+          />
+        ))}
+      </div>
     </div>
   );
 }
+
 
 export default DesignOverview;

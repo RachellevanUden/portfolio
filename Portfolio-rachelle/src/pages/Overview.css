@@ -36,6 +36,23 @@
     color: #555;
     margin-top: 2rem;
   }
+
+  .design-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-items: center;
+  }
+  
+  .design-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .design-image:hover {
+    transform: scale(1.05);
+  }
   
   /* Vimeo Button Styling */
 .vimeo-button {
@@ -53,3 +70,5 @@
   .vimeo-button:hover {
     background-color: #0e8ab8;
   }
+
+  
