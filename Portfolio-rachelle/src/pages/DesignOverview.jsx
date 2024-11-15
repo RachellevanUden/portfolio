@@ -25,6 +25,16 @@ function DesignOverview() {
           />
         ))}
       </div>
+
+      <div className="project-3d-link">
+        <Link to="/design/3d-project">
+          <div className="project-3d-thumbnail">
+            <img src={designImages[4]} alt="3D Design Exploration" />
+            <h3>3D Design Exploration</h3>
+          </div>
+        </Link>
+      </div>
+
     </div>
   );
 }

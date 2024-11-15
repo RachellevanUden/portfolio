@@ -11,6 +11,7 @@ import MulattinFamiri from './pages/MulattinFamiri';
 import Tegenwind from './pages/Tegenwind';
 import VideoOverview from './pages/VideoOverview';
 import DesignOverview from './pages/DesignOverview';
+import ThreeDProject from './pages/ThreeDProject';
 import thumbnailImagePhoto from './assets/Photography/Rachelle_van_Uden_Tegenwind-05.jpg';
 import thumbnailImageVideo from './assets/Video/Rachelle_van_Uden_EOTS.jpg';
 import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia1.png';
@@ -83,6 +84,7 @@ function App() {
             <Route path="/photography/tegenwind" element={<Tegenwind />} />
             <Route path="/video-overview" element={<VideoOverview />} />
             <Route path="/design-overview" element={<DesignOverview />} />
+            <Route path="/design/3d-project" element={<ThreeDProject />} />
           </Routes>
         </div>
         <Footer />
