@@ -36,7 +36,37 @@ export function initializeThreeJS(canvasId) {
     scene.add(lightHelper, gridHelper)
 
     const controls = new OrbitControls(camera, renderer.domElement);
+    
+    // Raycaster en interactief object
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
 
+    // Lamp
+    const lampGeometry = new THREE.SphereGeometry(0.5, 16, 16);
+    const lampMaterial = new THREE.MeshStandardMaterial({ color: 0xffff00 });
+    const lamp = new THREE.Mesh(lampGeometry, lampMaterial);
+    lamp.position.set(2, 3, 0);
+    scene.add(lamp);
+
+    // Eventlistener klikken
+    window.addEventListener('click', (event) => {
+
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+ 
+        raycaster.setFromCamera(mouse, camera);
+
+        const intersects = raycaster.intersectObjects([lamp]); 
+        if (intersects.length > 0) {
+            const clickedObject = intersects[0].object;
+
+            clickedObject.material.color.set(
+                clickedObject.material.color.getHex() === 0xffff00 ? 0x000000 : 0xffff00
+            );
+            console.log('Lamp geklikt!');
+        }
+    });
+    
     //Stars
     function addStar() {
         const geometry = new THREE.SphereGeometry(0.25,24,24);
