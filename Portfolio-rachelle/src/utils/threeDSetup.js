@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
 
 export function initializeThreeJS(canvasId) {
     const canvas = document.querySelector(`#${canvasId}`);
@@ -87,5 +88,23 @@ export function initializeThreeJS(canvasId) {
 
     animate();
 
-    return { camera, moon, raavu };
+    return { scene, camera, moon, raavu };
 }
+
+export function loadOBJModel(url, scene) {
+    const loader = new OBJLoader();
+  
+    loader.load(
+      url,
+      (object) => {
+        object.position.set(7, 0, 10); 
+        scene.add(object);
+      },
+      (xhr) => {
+        console.log((xhr.loaded / xhr.total) * 100 + '% geladen');
+      },
+      (error) => {
+        console.error('Fout bij het laden van het OBJ-model:', error);
+      }
+    );
+  }

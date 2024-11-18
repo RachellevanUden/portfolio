@@ -1,12 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import '../pages/ThreeDProject.css';
-import { initializeThreeJS } from '../utils/threeDSetup';
+import { initializeThreeJS, loadOBJModel } from '../utils/threeDSetup';
 
 function ThreeDProject() {
+  const [selectedFile, setSelectedFile] = useState(null);
+
   useEffect(() => {
-    const { camera, moon, raavu } = initializeThreeJS('bg');
+    const { scene, camera, moon, raavu } = initializeThreeJS('bg');
+
+    if (selectedFile) {
+      const fileURL = URL.createObjectURL(selectedFile);
+      loadOBJModel(fileURL, scene);
+    }
 
     // Scroll animatie
     const moveCamera = () => {
@@ -29,8 +36,31 @@ function ThreeDProject() {
 
     return () => {
       window.removeEventListener('scroll', moveCamera);
+      URL.revokeObjectURL(selectedFile);
     };
-  }, []);
+  }, [selectedFile]);
+
+  // Functie om bestand te selecteren
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setSelectedFile(file); 
+      console.log('Geselecteerd bestand:', file);
+    }
+  };
+
+  // Functie om bestand te uploaden
+  const handleFileUpload = () => {
+    if (selectedFile) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        console.log('Bestandsinhoud:', event.target.result);
+      };
+      reader.readAsText(selectedFile);
+    } else {
+      console.error('Geen bestand geselecteerd');
+    }
+  };
 
   return (
     <div className="project-detail">
@@ -43,6 +73,12 @@ function ThreeDProject() {
 
       {/* Canvas */}
       <canvas id="bg"></canvas>
+
+      {/* Upload sectie */}
+      <div className="upload-container">
+        <input type="file" accept=".obj" onChange={handleFileChange} />
+        <button onClick={handleFileUpload}>Upload 3D Model</button>
+      </div>
 
       {/* Tekst */}
       <main>
