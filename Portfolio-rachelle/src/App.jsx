@@ -17,6 +17,7 @@ import thumbnailImageVideo from './assets/Video/Rachelle_van_Uden_EOTS.jpg';
 import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia1.png';
 import thumbnailImagePrototype from './assets/Prototype/Rachelle_van_Uden_Photorealistic_Render-01.jpg';
 import PhotorealisticRender from './pages/PhotorealisticRender';
+import ThreeJsExperiment from './pages/ThreeJsExperiment';
 
 function Home() {
   const location = useLocation();
@@ -98,6 +99,7 @@ function App() {
             <Route path="/design-overview" element={<DesignOverview />} />
             <Route path="/prototype-overview" element={<PrototypeOverview />} />
             <Route path="/prototype/photorealistic-render" element={<PhotorealisticRender />} />
+            <Route path="/prototype/threejs-experiment" element={<ThreeJsExperiment />} />
           </Routes>
         </div>
         <Footer />

@@ -1,0 +1,115 @@
+.threejs-experiment-detail {
+    .upload-container {
+      display: flex;
+      color:white;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+    }
+
+    .title-container {
+      position: relative; /* Or absolute if needed */
+      z-index: 100; /* Ensure it’s higher than the canvas or other elements */
+      padding: 2rem 2rem 0;
+    }
+
+    .project-title {
+      color:white;
+    }
+
+    .back-button {
+      color: white;
+    }
+  
+    .upload-container input {
+      margin-right: 10px;
+    }
+  
+    .upload-container button {
+      padding: 10px 20px;
+      background-color: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .upload-container button:hover {
+      background-color: #e7673f;
+    }
+  
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    main {
+      width: 100vw;
+      color: white;
+      z-index: 99;
+      position: absolute;
+      width: 100%;
+      margin: 0px auto;
+      padding: 120px 0px;
+  
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  
+    h1, h2, h3, blockquote {
+      font-family: elevon, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+  
+    header {
+      grid-column: 2 / span 5;
+      font-size: 2.5rem;
+      padding: 2rem;
+    }
+
+    header h1 {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+    }
+  
+    section {
+      grid-column: 2/8;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin: 2rem 0;
+    }
+  
+    blockquote {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: var(--spacing);
+    }
+  
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+    }
+  
+    p {
+      color: white;
+    }
+  
+    .left {
+      grid-column: 6 / 12;
+    }
+  }
+  
