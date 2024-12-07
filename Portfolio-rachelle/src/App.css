@@ -201,7 +201,7 @@ html {
   }
 
   .section {
-    flex: 1 1 30%; /* Three columns on desktop */
+    flex: 1 1 20%; /* Four columns on desktop */
   }
 }
   

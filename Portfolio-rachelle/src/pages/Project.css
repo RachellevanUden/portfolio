@@ -40,7 +40,24 @@
   grid-template-columns: 1fr; 
   gap: 0.3rem; 
 }
-  
+
+.photorealistic-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.photorealistic-gallery .image-container {
+  text-align: center;
+}
+
+.photorealistic-gallery .image-caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
 .back-button {
   display: inline-flex;
   align-items: center;

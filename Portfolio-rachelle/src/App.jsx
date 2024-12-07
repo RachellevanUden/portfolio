@@ -11,9 +11,12 @@ import MulattinFamiri from './pages/MulattinFamiri';
 import Tegenwind from './pages/Tegenwind';
 import VideoOverview from './pages/VideoOverview';
 import DesignOverview from './pages/DesignOverview';
+import PrototypeOverview from './pages/PrototypeOverview';
 import thumbnailImagePhoto from './assets/Photography/Rachelle_van_Uden_Tegenwind-05.jpg';
 import thumbnailImageVideo from './assets/Video/Rachelle_van_Uden_EOTS.jpg';
 import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia1.png';
+import thumbnailImagePrototype from './assets/Prototype/Rachelle_van_Uden_Photorealistic_Render-01.jpg';
+import PhotorealisticRender from './pages/PhotorealisticRender';
 
 function Home() {
   const location = useLocation();
@@ -63,6 +66,16 @@ function Home() {
             <p>Browse my design work, from graphic design to 3D modeling.</p>
           </div>
         </section>
+
+        <section id="Prototypes" className="section">
+          <Link to="/prototype-overview">
+            <img src={thumbnailImagePrototype} alt="Prototype Overview" className="thumbnail-image" />
+          </Link>
+          <div className="media-text">
+            <h2>Prototype</h2>
+            <p>Discover my prototypes, creative projects to refine my skills and explore new techniques.</p>
+          </div>
+        </section>
       </div>
     </div>
   );
@@ -83,6 +96,8 @@ function App() {
             <Route path="/photography/tegenwind" element={<Tegenwind />} />
             <Route path="/video-overview" element={<VideoOverview />} />
             <Route path="/design-overview" element={<DesignOverview />} />
+            <Route path="/prototype-overview" element={<PrototypeOverview />} />
+            <Route path="/prototype/photorealistic-render" element={<PhotorealisticRender />} />
           </Routes>
         </div>
         <Footer />

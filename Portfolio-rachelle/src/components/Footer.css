@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #333;
+  background: linear-gradient(to right, #c4958d 0%, #996c4f 22%, #4f3338 100%);
   color: #fff;
 }
 
@@ -19,5 +19,5 @@
 }
 
 .social-links a:hover {
-  color: #ff7f50;
+  color: #333;
 }
