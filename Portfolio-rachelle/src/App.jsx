@@ -18,6 +18,7 @@ import thumbnailImageDesign from './assets/Design/Rachelle_van_Uden_Nostalgia1.p
 import thumbnailImagePrototype from './assets/Prototype/Rachelle_van_Uden_Photorealistic_Render-01.jpg';
 import PhotorealisticRender from './pages/PhotorealisticRender';
 import ThreeJsExperiment from './pages/ThreeJsExperiment';
+import StorytellingApple from './pages/StorytellingApple';
 
 function Home() {
   const location = useLocation();
@@ -100,6 +101,7 @@ function App() {
             <Route path="/prototype-overview" element={<PrototypeOverview />} />
             <Route path="/prototype/photorealistic-render" element={<PhotorealisticRender />} />
             <Route path="/prototype/threejs-experiment" element={<ThreeJsExperiment />} />
+            <Route path="/prototype/storytelling-apple" element={<StorytellingApple />} />
           </Routes>
         </div>
         <Footer />

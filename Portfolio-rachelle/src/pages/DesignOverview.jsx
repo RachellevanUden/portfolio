@@ -2,17 +2,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-import './Overview.css';
+import './DesignOverview.css';
 import designImages from '../assets/Design/designImages';
 
 function DesignOverview() {
   return (
-    <div className="project-detail">
+    <div className="design-overview">
       <div className="title-container">
         <Link to="/" className="back-button">
           <FaArrowLeft />
         </Link>
-        <h2 className="project-title">Design Projects</h2>
+        <h2 className="overview-title">Design Projects</h2>
       </div>
 
       <div className="image-gallery">

@@ -132,7 +132,7 @@ html {
 
 .about-page {
   display: flex;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .about-content {
@@ -169,7 +169,7 @@ html {
 
 .contact-page {
   display: flex;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 /* Responsive Layouts */
@@ -181,6 +181,7 @@ html {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-around;
+    padding: 3rem 2rem;
   }
 
   .section {
@@ -189,7 +190,7 @@ html {
   }
 
   .construction-message {
-    padding: 1rem 2rem ;
+    padding: 2rem 2rem 1rem;
   }
 
 }
@@ -198,6 +199,7 @@ html {
 @media (min-width: 1024px) {
   .media-tiles {
     justify-content: space-between;
+    padding: 5rem 2rem;
   }
 
   .section {

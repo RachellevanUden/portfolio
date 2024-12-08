@@ -4,7 +4,7 @@ import { FaArrowLeft } from 'react-icons/fa';
 import prototypeImages from '../assets/Prototype/prototypeImages';
 import ThreeJsExperimentImage from '../assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Space.jpg';
 import mulattinFamiriImages from '../assets/Photography/mulattinFamiriImages';
-import tegenwindImages from '../assets/Photography/tegenwindImages';
+import AppleStoryImage from "../assets/Prototype/Rachelle_van_Uden_Storytelling-Threejs.jpg"
 import './PrototypeOverview.css';
 
 function PrototypeOverview() {
@@ -18,12 +18,6 @@ function PrototypeOverview() {
       </div>      
       <div className="project-grid">
         <div className="project-item">
-          <Link to="/photography/mulattin-famiri">
-            <img src={mulattinFamiriImages[25]} alt="Prototype 1" />
-            <h3>Product Visualization</h3>
-          </Link>
-        </div>
-        <div className="project-item">
           <Link to="/prototype/photorealistic-render">
             <img src={prototypeImages[5].src} alt="Prototype 2" />
             <h3>Photorealistic productrender</h3>
@@ -36,8 +30,8 @@ function PrototypeOverview() {
           </Link>
         </div>
         <div className="project-item">
-          <Link to="/photography/tegenwind">
-            <img src={tegenwindImages[4]} alt="Prototype 4" />
+          <Link to="/prototype/storytelling-apple">
+            <img src={AppleStoryImage} alt="Prototype 4" />
             <h3>Storytelling with Three.js</h3>
           </Link>
         </div>
