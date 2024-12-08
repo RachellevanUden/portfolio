@@ -92,55 +92,54 @@ function ThreeJsExperiment() {
           </blockquote>
   
           <section>
-            <h2>📜 Manifesto</h2>
+            <h2>📜 Research</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Over the course of two weeks, I tackled a long-overdue assignment and made significant progress on my Expert Lab project. I also relaunched my portfolio website, this time building it entirely from scratch using HTML, CSS, JavaScript, React, Vite, and Three.js. You can explore it at www.rachellevanuden.nl ( right here ;) )  to view my previous projects and see what I'm currently working on. <br/> <br/>~Try clicking that yellow ball by the way!~<br/><br/>
+            While the project not completely bug free, I chose to make it live so anyone interested can follow along and witness my ongoing skill development. I started with a mobile-first approach and drew on my prior experience with React and Vite to establish a strong foundation. From there, I introduced advanced features like interactive elements and support for uploading 3D models, further enhancing the functionality and depth of my portfolio.
             </p>
   
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-  
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
           </section>
   
           <section className="light">
-            <h2>👩🏽‍🚀 Projects</h2>
+
+          <h2>🔧 Problems and fixes</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            One of the first problems I encountered was getting an image to display correctly as a background in the 3D scene. Initially, the image path didn't work because I had placed the file in the src/assets folder. After some research, I assumed that Three.js could only handle correct paths if the files were located in the public folder. By moving the image there and changing the path to /space.jpg, I was able to temporarily solve the issue. However, I later discovered what the right path was, rookie mistake. 
+            </p><br/>
+            <h2>👩🏽‍🚀 Textures on 3D Objects</h2>
+            <p>            
+            The next issue arose when I tried to add a texture to an object—the moon. Although the texture was successfully loaded, it appeared invisible in the scene. I eventually discovered that this was due to insufficient lighting. By adding a stronger PointLight and increasing its intensity to something higher, the texture became clearly visible. In addition, I adjusted the position of the light source to better illuminate the object.
             </p>
-  
-            <h2>🏆 Accomplishments</h2>
+            <br/>
+            <h2>🔄 Refresh Issues</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            While coding, I noticed that when I saved changes in Visual Studio Code, the textures sometimes wouldn't appear on the live localhost page. After refreshing the page, the textures would display correctly again. I discovered this was a caching issue in the development environment, likely caused by Vite, and that it could be resolved by refreshing the page after making changes.
             </p>
           </section>
   
           <blockquote>
-            <p>The best way out is always through <br />-Robert Frost</p>
+            <p>The yellow ball was just <br />a little interaction test! </p>
           </blockquote>
   
           <section className="left">
-            <h2>🌮 Work History</h2>
+            <h2>🏆 Next Steps</h2>
   
-            <h3>McDonalds</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            While I'm pleased with what I've achieved so far, there are a few improvements I'd like to implement in the future. Admittedly, it currently looks like a bit of a messy collection of elements, but at least it all works, and that was my main priority.
             </p>
-            <h3>Burger King</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br />First, I'd like to integrate a simple version of the 3D functionality into my live portfolio website for projects that have associated 3D models. This would involve optimizing the 3D page and ensuring it visually fits with the rest of my portfolio.
             </p>
-            <h3>Taco Bell</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br />In addition, I'd like to add more interactive elements to the 3D scene. For example, implementing a click-and-drag feature would let users view the model from any angle. This kind of functionality would not only make the scene more engaging but also more informative.
+            </p>
+            <p>
+            <br />Finally, I'm considering animations. Automatically rotating objects or adding subtle motions could make the experience more dynamic. This could be applied, for instance, as a hover effect when users browse my design page.
             </p>
           </section>
   
           <blockquote>
-            <p>Thanks for watching!</p>
+            <p>Thanks for checking it out!</p>
           </blockquote>
         </main>
       </div>

@@ -1,14 +1,11 @@
-/* src/pages/DesignOverview.css */
+/* src/pages/VideoOverview.css */
 
-.design-overview {
+.overview-page {
   padding: 2rem;
   text-align: center;
 }
 
-.design-page {
-  padding: 2rem;
-}
-  
+
 .title-container {
   display: flex;
   align-items: center;
@@ -59,4 +56,22 @@
 .design-image:hover {
   transform: scale(1.05);
 }
+  
+/* Vimeo Button Styling */
+.vimeo-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1ab7ea;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  
+.vimeo-button:hover {
+  background-color: #0e8ab8;
+}
+
   

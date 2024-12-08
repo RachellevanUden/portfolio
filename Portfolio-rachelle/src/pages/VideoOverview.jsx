@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-import './Overview.css';
+import './VideoOverview.css';
 
 function VideoOverview() {
   return (
@@ -15,7 +15,7 @@ function VideoOverview() {
       </div>
       
       <p className="overview-message">
-        Exciting video are being uploaded soon! Check back soon as the website is still under construction.
+        Exciting video are being uploaded soon! <br/>Check back soon as the website is still under construction.
       </p>
 
       {/* Vimeo Link Button */}
