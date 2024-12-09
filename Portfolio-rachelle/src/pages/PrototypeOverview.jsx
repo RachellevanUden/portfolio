@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import prototypeImages from '../assets/Prototype/prototypeImages';
-import ThreeJsExperimentImage from '../assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Space.jpg';
-import mulattinFamiriImages from '../assets/Photography/mulattinFamiriImages';
+import ThreeJsExperimentImage from '/Rachelle_van_Uden_ThreeJsExperiment_Space.jpg';
 import AppleStoryImage from "../assets/Prototype/Rachelle_van_Uden_Storytelling-Threejs.jpg"
 import './PrototypeOverview.css';
 

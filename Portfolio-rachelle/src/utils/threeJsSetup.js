@@ -82,17 +82,17 @@ export function initializeThreeJS(canvasId) {
     Array(200).fill().forEach(addStar);
 
     //Background
-    const spaceTexture = new THREE.TextureLoader().load('../src/assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Space.jpg');
+    const spaceTexture = new THREE.TextureLoader().load('/Rachelle_van_Uden_ThreeJsExperiment_Space.jpg');
     scene.background = spaceTexture;
 
     //Avatar (Raavu)
-    const raavuTexture = new THREE.TextureLoader().load('../src/assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Raavu.jpg');
+    const raavuTexture = new THREE.TextureLoader().load('/Rachelle_van_Uden_ThreeJsExperiment_Raavu.jpg');
     const raavu = new THREE.Mesh(new THREE.BoxGeometry(3,3,3), new THREE.MeshBasicMaterial( {map: raavuTexture}));
     scene.add(raavu)
 
     //Moon
-    const moonTexture = new THREE.TextureLoader().load('../src/assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Moon.jpg');
-    const normalTexture = new THREE.TextureLoader().load('../src/assets/Prototype/Rachelle_van_Uden_ThreeJsExperiment_Normal.jpg');
+    const moonTexture = new THREE.TextureLoader().load('/Rachelle_van_Uden_ThreeJsExperiment_Moon.jpg');
+    const normalTexture = new THREE.TextureLoader().load('/Rachelle_van_Uden_ThreeJsExperiment_Normal.jpg');
     const moon = new THREE.Mesh(
         new THREE.SphereGeometry(3, 16, 16),
         new THREE.MeshStandardMaterial({
